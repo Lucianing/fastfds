@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  fastdfs:
+    build: fastdfs
+    restart: always
+    container_name: fastdfs
+    volumes:
+      - /usr/local/docker/fastdfs/storage:/fastdfs/storage
+    network_mode: host
